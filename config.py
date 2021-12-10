@@ -1,10 +1,11 @@
+dataset_root = 'D:\\实验\\数据集\\CUB_200_2011\\CUB_200_2011'
 BATCH_SIZE = 8
 PROPOSAL_NUM = 6
 CAT_NUM = 4
 INPUT_SIZE = (448, 448)  # (w, h)
 LR = 0.001
 WD = 1e-4
-SAVE_FREQ = 1
+SAVE_FREQ = 5
 resume = ''
 test_model = 'model.ckpt'
 save_dir = 'models/'
