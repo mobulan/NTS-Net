@@ -22,6 +22,8 @@ in ``config.py``. The parameter ``PROPOSAL_NUM`` is ``M`` in the original paper 
 in the original paper. During training, the log file and checkpoint file will be saved in ``save_dir`` directory. You
 can change the parameter ``resume`` to choose the checkpoint model to resume.
 
+`python -W ignore train.py`
+
 ## Test the model
 
 If you want to test the NTS-Net, just run ``python test.py``. You need to specify the ``test_model`` in ``config.py`` to

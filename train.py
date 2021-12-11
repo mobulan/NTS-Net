@@ -21,10 +21,10 @@ if __name__ == '__main__':
 	# read dataset
 	trainset = dataset.CUB(root=dataset_root, is_train=True, data_len=None)
 	trainloader = torch.utils.data.DataLoader(trainset, batch_size=BATCH_SIZE,
-	                                          shuffle=True, num_workers=8, drop_last=False)
+	                                          shuffle=True, num_workers=0, drop_last=False)
 	testset = dataset.CUB(root=dataset_root, is_train=False, data_len=None)
 	testloader = torch.utils.data.DataLoader(testset, batch_size=BATCH_SIZE,
-	                                         shuffle=False, num_workers=8, drop_last=False)
+	                                         shuffle=False, num_workers=0, drop_last=False)
 	# define model
 	net = model.attention_net(topN=PROPOSAL_NUM)
 	if resume:
